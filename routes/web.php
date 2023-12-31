@@ -16,3 +16,7 @@ Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.de
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
 Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
 Route::post('/customer', [CustomerController::class, 'store'])->name('customer.store');
+Route::get('/customer/{id}', [CustomerController::class, 'show'])->name('customer.show');
+Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('customer.delete');
+Route::get('/customer/{id}/edit', [CustomerController::class, 'edit'])->name('customer.edit');
+Route::post('/customer/{id}/update', [CustomerController::class, 'update'])->name('customer.update');

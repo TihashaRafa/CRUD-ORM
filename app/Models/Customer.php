@@ -21,7 +21,7 @@ class Customer extends Model
 
     // attribute custing
 
-    protected $cast = [
+    protected $casts = [
         'tags' =>'array',
     ];
 }
